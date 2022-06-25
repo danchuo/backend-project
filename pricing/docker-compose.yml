@@ -5,9 +5,9 @@ services:
     image: 'postgres:10'
     container_name: 'java-postgres'
     environment:
-      - 'POSTGRES_USER = postgres'
-      - 'POSTGRES_PASSWORD = 123'
-      - 'POSTGRES_DB = pricing'
+      - 'POSTGRES_USER=postgres'
+      - 'POSTGRES_PASSWORD=123'
+      - 'POSTGRES_DB=pricing'
 
   app:
     build: ./
