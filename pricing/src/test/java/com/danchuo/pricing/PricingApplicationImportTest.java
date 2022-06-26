@@ -34,7 +34,7 @@ class PricingApplicationImportTest {
                   {"code": 400, "message": "Validation Failed"}""";
 
   private static final String IMPORT_SUCCESS = """
-          {"code": 200, "message": "Вставка или обновление прошли успешно."}""";
+          {"code": 200, "message": "The insert or update was successful."}""";
 
   @Autowired private MockMvc mockMvc;
   @Autowired

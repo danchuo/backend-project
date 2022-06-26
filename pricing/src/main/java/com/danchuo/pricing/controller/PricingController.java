@@ -35,7 +35,7 @@ public class PricingController {
     if (isSuccessfully) {
       response =
           ResponseEntity.ok()
-              .body(new ShopError(ShopError.OK, "Вставка или обновление прошли успешно."));
+              .body(new ShopError(ShopError.OK, "The insert or update was successful."));
     } else {
       response =
           ResponseEntity.badRequest()
@@ -53,7 +53,7 @@ public class PricingController {
     ResponseEntity<ShopError> response;
 
     if (isSuccessfully) {
-      response = ResponseEntity.ok().body(new ShopError(ShopError.OK, "Удаление прошло успешно."));
+      response = ResponseEntity.ok().body(new ShopError(ShopError.OK, "The deleting was successful."));
     } else {
       response =
           ResponseEntity.status(HttpStatus.NOT_FOUND)
